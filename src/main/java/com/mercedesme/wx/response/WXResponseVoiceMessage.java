@@ -1,6 +1,6 @@
 package com.mercedesme.wx.response;
 
-import com.mercedesme.wx.XStreamCDataConverter;
+import com.mercedesme.wx.XStreamDataConverter;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamConverter;
 
@@ -12,7 +12,7 @@ import com.thoughtworks.xstream.annotations.XStreamConverter;
 public class WXResponseVoiceMessage extends WXResponseBaseMessage {
 	private static final long serialVersionUID = 1448279933505693204L;
 	@XStreamAlias("MediaId")
-	@XStreamConverter(value = XStreamCDataConverter.class)
+	@XStreamConverter(value = XStreamDataConverter.class)
 	private String mediaId;
 
 	public String getMediaId() {

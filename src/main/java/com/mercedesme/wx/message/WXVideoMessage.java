@@ -1,6 +1,6 @@
 package com.mercedesme.wx.message;
 
-import com.mercedesme.wx.XStreamCDataConverter;
+import com.mercedesme.wx.XStreamDataConverter;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamConverter;
 
@@ -14,11 +14,11 @@ public class WXVideoMessage extends WXBaseMessage {
 	private static final long serialVersionUID = -2548991570040584285L;
 	// 视频消息缩略图的媒体id，可以调用多媒体文件下载接口拉取数据。
 	@XStreamAlias("ThumbMediaId")
-	@XStreamConverter(value = XStreamCDataConverter.class)
+	@XStreamConverter(value = XStreamDataConverter.class)
 	private String thumbMediaId;
 	// 视频消息媒体id，可以调用多媒体文件下载接口拉取数据。
 	@XStreamAlias("MediaId")
-	@XStreamConverter(value = XStreamCDataConverter.class)
+	@XStreamConverter(value = XStreamDataConverter.class)
 	private String mediaId;
 
 	public String getThumbMediaId() {

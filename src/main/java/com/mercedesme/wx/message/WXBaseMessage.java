@@ -2,7 +2,7 @@ package com.mercedesme.wx.message;
 
 import java.io.Serializable;
 
-import com.mercedesme.wx.XStreamCDataConverter;
+import com.mercedesme.wx.XStreamDataConverter;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamConverter;
 
@@ -14,22 +14,22 @@ public class WXBaseMessage implements Serializable {
 	private static final long serialVersionUID = -780978878975970159L;
 
 	@XStreamAlias("ToUserName")
-	@XStreamConverter(value = XStreamCDataConverter.class)
+	@XStreamConverter(value = XStreamDataConverter.class)
 	protected String toUserName;// 开发者微信号
 
 	@XStreamAlias("FromUserName")
-	@XStreamConverter(value = XStreamCDataConverter.class)
+	@XStreamConverter(value = XStreamDataConverter.class)
 	protected String fromUserName;// 发送方帐号（一个OpenID）
 
 	@XStreamAlias("CreateTime")
 	protected Long createTime;// 消息创建时间 （整型）
 
 	@XStreamAlias("MsgType")
-	@XStreamConverter(value = XStreamCDataConverter.class)
+	@XStreamConverter(value = XStreamDataConverter.class)
 	protected String msgType;// 消息类型（text/image/location/link）
 	
 	@XStreamAlias("MsgId")
-	@XStreamConverter(value = XStreamCDataConverter.class)
+	@XStreamConverter(value = XStreamDataConverter.class)
 	protected String msgId;// 消息id，64位整型
 
 	public String getToUserName() {

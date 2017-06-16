@@ -1,6 +1,6 @@
 package com.mercedesme.wx.message;
 
-import com.mercedesme.wx.XStreamCDataConverter;
+import com.mercedesme.wx.XStreamDataConverter;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamConverter;
 /**
@@ -13,7 +13,7 @@ public class WXTextMessage extends WXBaseMessage {
 	private static final long serialVersionUID = 6647871145921124207L;
 	
 	@XStreamAlias("Content")
-	@XStreamConverter(value = XStreamCDataConverter.class)
+	@XStreamConverter(value = XStreamDataConverter.class)
 	private String content;// 消息内容
 
 	public String getContent() {

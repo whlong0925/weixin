@@ -1,6 +1,6 @@
 package com.mercedesme.wx.response;
 
-import com.mercedesme.wx.XStreamCDataConverter;
+import com.mercedesme.wx.XStreamDataConverter;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamConverter;
 
@@ -14,7 +14,7 @@ import com.thoughtworks.xstream.annotations.XStreamConverter;
 public class WXResponseTextMessage extends WXResponseBaseMessage {
 	private static final long serialVersionUID = -184856372880644747L;
 	@XStreamAlias("Content")
-	@XStreamConverter(value = XStreamCDataConverter.class)
+	@XStreamConverter(value = XStreamDataConverter.class)
 	private String content;// 回复的消息内容
 	public String getContent() {
 		return this.content;

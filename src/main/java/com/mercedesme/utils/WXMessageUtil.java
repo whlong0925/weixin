@@ -12,7 +12,7 @@ import com.thoughtworks.xstream.io.xml.XppDriver;
 import com.thoughtworks.xstream.security.NullPermission;
 import com.thoughtworks.xstream.security.PrimitiveTypePermission;
 
-public class MessageUtil {
+public class WXMessageUtil {
 	private static final Map<Class<?>, XStream> XSTREAM_INSTANCE = new HashMap<>();
 
 	/**

@@ -1,6 +1,6 @@
 package com.mercedesme.wx.event;
 
-import com.mercedesme.wx.XStreamCDataConverter;
+import com.mercedesme.wx.XStreamDataConverter;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamConverter;
 /**
@@ -12,13 +12,13 @@ public class WXLocationEvent extends WXBaseEvent {
 
 	private static final long serialVersionUID = -8549196063593157042L;
 	@XStreamAlias("Latitude")
-	@XStreamConverter(value = XStreamCDataConverter.class)
+	@XStreamConverter(value = XStreamDataConverter.class)
 	private String latitude;// 地理位置纬度
 	@XStreamAlias("Longitude")
-	@XStreamConverter(value = XStreamCDataConverter.class)
+	@XStreamConverter(value = XStreamDataConverter.class)
 	private String longitude;// 地理位置经度
 	@XStreamAlias("Precision")
-	@XStreamConverter(value = XStreamCDataConverter.class)
+	@XStreamConverter(value = XStreamDataConverter.class)
 	private String precision; // 地理位置精度
 
 	public String getLatitude() {
