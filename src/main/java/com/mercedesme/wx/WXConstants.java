@@ -33,4 +33,20 @@ public class WXConstants {
 	public static final String RESP_MESSAGE_TYPE_NEWS = "news";// 图文
 	
 	public static final String ACCESS_TOKEN_URL="https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s";
+	//获取用户增减数据
+	public static final String DATA_GETUSERSUMMARY_URL="https://api.weixin.qq.com/datacube/getusersummary?access_token=%s";
+	//获取累计用户数据
+	public static final String DATA_GETUSERCUMULATE_URL="https://api.weixin.qq.com/datacube/getusercumulate?access_token=%s";
+	//获取图文群发每日数据
+	public static final String DATA_ARTICLESUMMARY_URL="https://api.weixin.qq.com/datacube/getarticlesummary?access_token=%s";
+	//获取图文群发总数据	
+	public static final String DATA_ARTICLETOTA_URL="https://api.weixin.qq.com/datacube/getarticletotal?access_token=%s";
+	//获取图文统计数据
+	public static final String DATA_USERREAD_URL="https://api.weixin.qq.com/datacube/getuserread?access_token=%s";
+	//获取图文统计分时数据
+	public static final String DATA_USERREADHOUR_URL="https://api.weixin.qq.com/datacube/getuserreadhour?access_token=%s";
+	//获取图文分享转发数据
+	public static final String DATA_USERSHARE_URL="https://api.weixin.qq.com/datacube/getusershare?access_token=%s";
+    //获取图文分享转发分时数据	
+	public static final String DATA_USERSHAREHOUR_URL="https://api.weixin.qq.com/datacube/getusersharehour?access_token=%s";
 }
